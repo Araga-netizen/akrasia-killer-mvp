@@ -5,6 +5,7 @@ import rateLimit from "express-rate-limit";
 import dotenv from "dotenv";
 import authRoutes from "./routes/auth.js";
 import consentRoutes from "./routes/consent.js";
+import onboardingRoutes from "./routes/onboarding.js";
 import nutritionRoutes from "./routes/nutrition.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 
@@ -37,6 +38,7 @@ app.get("/health", (req, res) => {
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/consent", consentRoutes);
+app.use("/api/onboarding", onboardingRoutes);
 app.use("/api/nutrition", nutritionRoutes);
 
 // 404 handler
