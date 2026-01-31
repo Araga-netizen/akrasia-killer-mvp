@@ -1,3 +1,5 @@
+import { Request } from "express";
+
 // User types
 export interface User {
   id: string;
@@ -57,7 +59,7 @@ export class AppError extends Error {
 }
 
 // Request with user context
-export interface AuthenticatedRequest {
+export interface AuthenticatedRequest extends Request {
   user?: {
     userId: string;
     email: string;
