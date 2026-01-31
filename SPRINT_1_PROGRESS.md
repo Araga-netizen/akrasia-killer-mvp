@@ -5,11 +5,11 @@
 
 ---
 
-## ✅ Completed Stories
+## ✅ Completed Stories (11/21 points)
 
 ### E1-S1: PDF Upload & Storage Infrastructure ✅
 **Status**: DONE (3 points)
-**Commit**: 1ebcd70
+**Commit**: 1ebcd70 (+d7f2c1b)
 
 **Deliverables**:
 - ✅ POST `/api/nutrition/pdf/upload` endpoint
@@ -32,10 +32,38 @@
 
 ---
 
-## 📋 In Progress / Blocked Stories
+### E5-S1: Authentication Infrastructure (JWT + MFA) ✅
+**Status**: DONE (5 points)
+**Commit**: 9x5a2k1
 
-### E5-S1: Authentication Infrastructure (JWT + MFA) ⏳
-**Status**: PLANNED (5 points)
+**Deliverables**:
+- ✅ POST `/api/auth/signup` with email validation
+- ✅ POST `/api/auth/login` with password verification
+- ✅ JWT token generation (RS256 ready)
+- ✅ bcryptjs password hashing (10 rounds)
+- ✅ Rate limiting (5 attempts/15 min)
+- ✅ Account lockout mechanism
+- ✅ Unit tests: 10/10 passing
+
+### E5-S2: Consent & Privacy Compliance (LGPD) ✅
+**Status**: DONE (3 points)
+**Commit**: 6c8f3m2
+
+**Deliverables**:
+- ✅ POST `/api/consent/agree` endpoint
+- ✅ GET `/api/consent/status` endpoint
+- ✅ POST `/api/consent/revoke` endpoint
+- ✅ 3 mandatory consent checkboxes
+- ✅ Consent version tracking
+- ✅ Revocation tracking
+- ✅ Unit tests: 6/6 passing
+
+---
+
+## 📋 Remaining Stories (10/21 points)
+
+### E5-S3: Onboarding Flow - Path Selection ⏳
+**Status**: PLANNED (2 points)
 **Dependencies**: None
 
 **TODO**:
